@@ -150,9 +150,9 @@
           <div height="200px">
             <v-list lines="one">
             <v-list-item
-            >Rotação Cabeça: {{headResponse.inclinationState}} 
+            >Inclinação Cabeça: {{headResponse.inclinationState}} 
             <v-spacer></v-spacer>
-            Inclinação Cabeça: {{headResponse.rotationState}}</v-list-item>
+            Rotação Cabeça: {{headResponse.rotationState}}</v-list-item>
           </v-list>
             <v-divider></v-divider>
             <v-list lines="one">
