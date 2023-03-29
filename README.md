@@ -7,6 +7,8 @@ Vue.Js 2 com Vuetify
 
 Observações:
 
+- Para executar a API, é necessário um ambiente de banco postgreSQL. Para configurar a connectionString, basta acessar o arquivo appconfig.json da API.
+
 - Após executar o projeto, deve ser executado o arquivo script_inicial.sql que está na pasta da API do projeto.
 
 - A API foi configurada para ser executada como uma aplicação self-host e deve ser instalada como windows service ou serviço daemon linux onde irá ser publicada. Deve ser configurada a porta no arquivo de configuração da API.
