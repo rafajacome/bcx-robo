@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Robo.Services.Domain/1.0.0": {
+        "runtime": {
+          "Robo.Services.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Robo.Services.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
