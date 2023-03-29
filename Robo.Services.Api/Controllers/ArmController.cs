@@ -52,7 +52,6 @@ namespace Robo.Services.Api.Controllers
             if (request is null)
                 return StatusCode(StatusCodes.Status400BadRequest);
 
-            if (ParameterValidation.ValidateParameterIsNotNull(ObjectToDictionaryHelper.ToDictionary(request)))
                 result = service.ChangeFistState(request);
 
             if (result)
@@ -69,7 +68,6 @@ namespace Robo.Services.Api.Controllers
             if (request is null)
                 return StatusCode(StatusCodes.Status400BadRequest);
 
-            if (ParameterValidation.ValidateParameterIsNotNull(ObjectToDictionaryHelper.ToDictionary(request)))
                 result = service.ChangeElbowState(request);
 
             if (result)

@@ -30,9 +30,6 @@ namespace Robo.Services.Service.Competidores
 
             var selectedArm = arm.Where(u => u.Side == request.Side).FirstOrDefault();
 
-            if (!ServiceHelpers.CanChangeFistState(selectedArm.ElbowState))
-                return false;
-
             if (!ServiceHelpers.IsInStateRange(selectedArm.ElbowState, request.ElbowState))
                 return false;
 
