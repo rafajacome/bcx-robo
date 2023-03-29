@@ -56,7 +56,7 @@ namespace Robo.Services.Api.Controllers
             if (result)
                 return StatusCode(StatusCodes.Status200OK, "Estado alterado com sucesso");
             else
-                return StatusCode(StatusCodes.Status500InternalServerError, "Houve um erro ao alterar o registro");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Estado não alterado. Verifique as regras e tente novamente.");
         }
 
         public IActionResult ChangeRotation([FromBody] RotationRequest request)
@@ -71,7 +71,7 @@ namespace Robo.Services.Api.Controllers
             if (result)
                 return StatusCode(StatusCodes.Status200OK, "Estado alterado com sucesso");
             else
-                return StatusCode(StatusCodes.Status500InternalServerError, "Houve um erro ao alterar o registro");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Estado não alterado. Verifique as regras e tente novamente.");
         }
     }
 }
