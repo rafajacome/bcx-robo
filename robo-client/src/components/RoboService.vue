@@ -25,7 +25,7 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn @click="moveRightFist(selectedLeftFist)">
+            <v-btn @click="moveLeftFist(selectedLeftFist)">
               Enviar<v-icon>{{ "mdi-send-circle" }}</v-icon>
             </v-btn>
           </v-card-actions>
@@ -159,7 +159,6 @@
             <v-list-item
               v-for="item in armResponse"
               :key="item.Id"
-              :title="item.fistState"
             >Lado: {{item.side == 1 ? 'Esquerdo' : 'Direito'}} 
             <v-spacer></v-spacer>
             Estado Cotovelo: {{item.elbowState}}

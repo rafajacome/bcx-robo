@@ -34,47 +34,51 @@ namespace Robo.Services.Service
                 return true;
         }
 
-        public static ArmEntity ElbowMapper(ElbowRequest request)
+        public static ArmEntity ElbowMapper(ElbowRequest request, ArmEntity selected)
         {
             var entity = new ArmEntity();
 
             entity.Id = request.Id;
             entity.Side = request.Side;
             entity.ElbowState = request.ElbowState;
+            entity.FistState = selected.FistState;
 
             return entity;
 
         }
 
-        public static ArmEntity FistMapper(FistRequest request)
+        public static ArmEntity FistMapper(FistRequest request, ArmEntity selected)
         {
             var entity = new ArmEntity();
 
             entity.Id = request.Id;
             entity.Side = request.Side;
             entity.FistState = request.FistState;
+            entity.ElbowState = selected.ElbowState;
 
             return entity;
 
         }
 
-        public static HeadEntity RotationMapper(RotationRequest request)
+        public static HeadEntity RotationMapper(RotationRequest request, HeadEntity selected)
         {
             var entity = new HeadEntity();
 
             entity.Id = request.Id;
             entity.RotationState = request.RotationState;
+            entity.InclinationState = selected.InclinationState;
 
             return entity;
 
         }
 
-        public static HeadEntity InclinationMapper(InclinationRequest request)
+        public static HeadEntity InclinationMapper(InclinationRequest request, HeadEntity selected)
         {
             var entity = new HeadEntity();
 
             entity.Id = request.Id;
             entity.InclinationState = request.InclinationState;
+            entity.RotationState = selected.RotationState;
 
             return entity;
 

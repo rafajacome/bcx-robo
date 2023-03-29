@@ -76,7 +76,7 @@ namespace Robo.Services.Infra.Repository
         {
             try
             {
-                return dataset.ToList();
+                return dataset.OrderBy(u => u.Id).ToList();
             }
             catch (Exception ex)
             {

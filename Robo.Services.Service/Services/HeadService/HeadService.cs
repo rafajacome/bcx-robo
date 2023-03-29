@@ -28,7 +28,7 @@ namespace Robo.Services.Service.Corrida
             if (!ServiceHelpers.IsInStateRange(head.InclinationState, request.InclinationState))
                 return false;
 
-            result = repository.Update(ServiceHelpers.InclinationMapper(request));
+            result = repository.Update(ServiceHelpers.InclinationMapper(request, head));
 
             return result;
         }
@@ -48,7 +48,7 @@ namespace Robo.Services.Service.Corrida
             if (!ServiceHelpers.IsInStateRange(head.RotationState, request.RotationState))
                 return false;
 
-            result = repository.Update(ServiceHelpers.RotationMapper(request));
+            result = repository.Update(ServiceHelpers.RotationMapper(request, head));
 
             return result;
         }

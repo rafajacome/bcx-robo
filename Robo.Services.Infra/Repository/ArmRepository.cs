@@ -18,21 +18,6 @@ namespace Robo.Services.Infra.Repository
         {
             dataset = context.Set<ArmEntity>();
         }
-
-        public void GetAverageById()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void GetAverages()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void GetCompetitorsWithoutRunning()
-        {
-            throw new NotImplementedException();
-        }
     }
 
 }

@@ -33,7 +33,7 @@ namespace Robo.Services.Service.Competidores
             if (!ServiceHelpers.IsInStateRange(selectedArm.ElbowState, request.ElbowState))
                 return false;
 
-            result = repository.Update(ServiceHelpers.ElbowMapper(request));
+            result = repository.Update(ServiceHelpers.ElbowMapper(request, selectedArm));
 
             return result;
         }
@@ -55,7 +55,7 @@ namespace Robo.Services.Service.Competidores
             if (!ServiceHelpers.IsInStateRange(selectedArm.FistState, request.FistState))
                 return false;
 
-                result = repository.Update(ServiceHelpers.FistMapper(request));
+                result = repository.Update(ServiceHelpers.FistMapper(request, selectedArm));
 
             return result;
         }
